@@ -4,47 +4,41 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #f5f5f5;
+  background-color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
 }
-.wrapper{
+.Payment{
   background-color: #fff;
-  width: 500px;
+  width: 561px;
   padding: 25px;
-  margin: 25px auto 0;
+  margin: 1em auto 0;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  height: 810px;
 }
-.wrapper h2{
-  background-color: #fcfcfc;
-  color: #7ed321;
-  font-size: 24px;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-  border: 1px dotted #333;
-}
+
 h4{
   padding-bottom: 5px;
-  color: #7ed321;
+  color: orange;
+  font-size: -1vw;
 }
-.input-group{
+.information{
   margin-bottom: 8px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
   padding: 5px 0;
+ 
+  
 }
 .input-box{
   width: 100%;
   margin-right: 12px;
   position: relative;
 }
-.input-box:last-child{
-  margin-right: 0;
-}
+
 .name{
-  padding: 14px 10px 14px 50px;
+  padding: 14px 11px 14px 60px;
   width: 100%;
   background-color: #fcfcfc;
   border: 1px solid #00000033;
@@ -54,12 +48,7 @@ h4{
   border-radius: 3px;
   color: #333;
 }
-.name:focus, .dob:focus{
-  -webkit-box-shadow:0 0 2px 1px #7ed32180;
-  -moz-box-shadow:0 0 2px 1px #7ed32180;
-  box-shadow: 0 0 2px 1px #7ed32180;
-  border: 1px solid #7ed321;
-}
+
 .input-box .icon{
   width: 48px;
   display: flex;
@@ -69,22 +58,15 @@ h4{
   top: 0px;
   left: 0px;
   bottom: 0px;
-  color: #333;
-  background-color: #f1f1f1;
+  color: grey;
+ 
   border-radius: 2px 0 0 2px;
   transition: 0.3s;
   font-size: 20px;
-  pointer-events: none;
-  border: 1px solid #00000033;
-  border-right: none;
+
+
 }
-.name:focus + .icon{
-  background-color: #7ed321;
-  color: #fff;
-  border-right: 1px solid #7ed321;
-  border: none;
-  transition: 1s;
-}
+
 .dob{
   width: 30%;
   padding: 14px;
@@ -107,19 +89,12 @@ h4{
   text-align: center;
   border: 1px solid #c0bfbf;
 }
-.input-box label:first-of-type{
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-right: none;
-}
-.input-box label:last-of-type{
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
+
+
 .radio:checked + label{
-  background-color: #7ed321;
+  background-color: orange;
   color: #fff;
-  transition: 0.5s;
+  
 }
 .input-box select{
   display: inline-block;
@@ -130,12 +105,102 @@ h4{
   text-align: center;
   font-size: 16px;
   outline: none;
-  border: 1px solid #c0bfbf;
-  cursor: pointer;
-  transition: all 0.2s ease;
+ cursor: pointer;
 }
-.input-box select:focus{
-  background-color: #7ed321;
-  color: #fff;
-  text-align: center;
+
+@media only screen and (max-width: 425px){
+  .Payment{
+    width: 425px;
+    height:100vh;
+    margin-top: 0px;
+  }
+.input-box .icon{
+  width: 50px;
+
 }
+.information{
+  display: flex;
+  flex-direction: column;
+}
+.input-box select{
+  margin-top: 12px;
+
+
+}
+
+}
+
+
+
+@media only screen and (max-width: 375px){
+  .Payment{
+    width:375px;
+    height:100vh;
+    margin-top: 0px;
+  }
+.input-box .icon{
+  width: 50px;
+
+}
+.information{
+  display: flex;
+  flex-direction: column;
+}
+.input-box select{
+  margin-top: 12px;
+
+
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 325px)  {
+ .Payment{
+ width:335px;
+ height:100vh;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ }
+
+.input-box .icon {
+  width:20px;
+  margin-left: 20px;
+
+}
+.information{
+  display: flex;
+  flex-direction: column;
+}
+.input-box select{
+  margin-top: 12px;
+
+}
+
+}
+@media only screen and (max-width: 320px)  {
+  .Payment{
+  width:320px;
+  height:100vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+ 
+ .input-box .icon {
+   width:20px;
+   margin-left: 20px;
+ 
+ }
+ .information{
+   display: flex;
+   flex-direction: column;
+ }
+ .input-box select{
+   margin-top: 12px;
+ 
+ }
+ 
+ }
