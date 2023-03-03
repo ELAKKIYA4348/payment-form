@@ -9,17 +9,17 @@ body{
 }
 .Payment{
   background-color: #fff;
-  width: 561px;
+  width: 648px;
   padding: 25px;
   margin: 1em auto 0;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-  height: 810px;
+  height: 923px;
 }
 
 h4{
-  padding-bottom: 5px;
+  padding-bottom: 17px;
   color: orange;
-  font-size: -1vw;
+  
 }
 .information{
   margin-bottom: 8px;
@@ -28,13 +28,14 @@ h4{
   display: flex;
   flex-direction: row;
   padding: 5px 0;
- 
+ height:90px;
   
 }
 .input-box{
   width: 100%;
   margin-right: 12px;
   position: relative;
+  padding-bottom: 22px;
 }
 
 .name{
@@ -59,7 +60,7 @@ h4{
   left: 0px;
   bottom: 0px;
   color: grey;
- 
+ height:47px;
   border-radius: 2px 0 0 2px;
   transition: 0.3s;
   font-size: 20px;
@@ -73,7 +74,7 @@ h4{
   text-align: center;
   background-color: #fcfcfc;
   transition: 0.3s;
-  outline: none;
+ 
   border: 1px solid #c0bfbf;
   border-radius: 3px;
 }
@@ -97,7 +98,7 @@ h4{
   
 }
 .input-box select{
-  display: inline-block;
+
   width: 50%;
   padding: 12px;
   background-color: #fcfcfc;
@@ -107,7 +108,18 @@ h4{
   outline: none;
  cursor: pointer;
 }
+.var {
+  border-left: 1px solid #c0bfbf;
+  height: 31px;
+  position: absolute;
+  left: 45px;
+  z-index: 1;
+  top: 9px;
+    }
 
+
+            
+                                                        
 @media only screen and (max-width: 425px){
   .Payment{
     width: 425px;
@@ -155,9 +167,6 @@ h4{
 }
 
 
-
-
-
 @media only screen and (max-width: 325px)  {
  .Payment{
  width:335px;
@@ -197,10 +206,17 @@ h4{
  .information{
    display: flex;
    flex-direction: column;
+   margin-bottom: 0px;
  }
  .input-box select{
    margin-top: 12px;
  
  }
+ .input-box {
+  line-height: 10px;
+ }
+ .input-box .label{
+  line-height:45px;
  
+ }
  }
