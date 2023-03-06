@@ -1,0 +1,126 @@
+    
+        table {
+          border-collapse: collapse;
+          width: 70%;
+          background-color: lightgrey;
+          margin:20px auto  0;
+          border:1px solid #fff;
+          box-shadow: 0px 0px 10px 0px rgb(200, 200, 200);
+          height: 20px;
+          margin-top:52px;
+          }
+          
+          th, td {
+          padding: 25px;
+          text-align:center;
+       
+          }
+          th, td{
+          padding-left: 20px;
+          }
+          tr:nth-child(even) {
+          background-color: lightgrey;
+          }
+          tr:nth-child(odd) {
+          background-color:#fff;
+          }
+          .progress {
+      width: 95px;
+      height: 26px;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor:pointer;
+          }
+          .open {
+      width: 66px;
+      height: 26px;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      margin-right: 30px;
+      cursor:pointer;
+  }
+  .onhold {
+      width: 89px;
+      height: 26px;
+      background-color: red;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      margin-right: 9px;
+      cursor:pointer;
+  }
+  p{
+      text-align: center;
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 0px;
+  }
+  
+  @media only screen and (max-width:1440px){
+   p{
+    margin-top: 47px;
+    margin-bottom:0px;
+  }
+   
+  }
+  @media only screen and (max-width: 1024px) {
+  
+    p{
+        font-size:30px; 
+        margin-bottom:30px;
+        margin-top: 67px;
+    }
+    table {
+        height: 10px;
+        margin-top: 0px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+
+    p{
+        font-size:30px; 
+        margin-bottom:30px;
+        margin-top: 67px;
+    }
+
+
+
+  }
+  @media only screen and (max-width: 425px) {
+    table {
+        height: 10px;
+        margin-top: 0px;
+    }
+    p {
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 69px;
+    }
+}
+@media only screen and (max-width: 375px){
+  table{
+        height:10px;
+    }
+    p {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+}
+@media only screen and (max-width: 320px) {
+    p {
+        font-size: 30px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+table{
+    height:40px;
+    width:40px;
+    margin-top: 31px;
+}
+
+}
